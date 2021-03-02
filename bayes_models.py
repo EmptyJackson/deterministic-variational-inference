@@ -1,7 +1,9 @@
-import tensorflow as tf
 import numpy as np
 import gaussian_variables as gv
 import bayes_layers as bnn
+
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 class MLP(object):
     def __init__(self, in_size, out_size, hypers):

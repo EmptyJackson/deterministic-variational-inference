@@ -1,8 +1,10 @@
-import tensorflow as tf
 import numpy as np
 import utils as u
 import bayes_util as bu
 import gaussian_variables as gv
+
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 EPSILON = 1e-6
 

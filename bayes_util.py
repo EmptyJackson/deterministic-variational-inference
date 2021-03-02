@@ -1,6 +1,8 @@
-import tensorflow as tf
 import numpy as np
 import numpy.linalg as nla
+
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 pi = tf.constant(np.pi, dtype=tf.float32)
 sqrt2 = tf.constant(np.sqrt(2.0), dtype=tf.float32)

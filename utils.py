@@ -1,10 +1,12 @@
 import json
 import os
-import tensorflow as tf
 import numpy as np
 import datetime as dt
 from collections import defaultdict
 import gaussian_variables as gv
+
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 def start_run():
     pid = os.getpid()
